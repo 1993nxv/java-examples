@@ -47,27 +47,27 @@ public class WorkingWithFiles {
         }
 
     }
-    
-    public static void fileReader(File objectFile){
-                
-                //Reader File
-                System.out.println("Conteudo do Aqruivo: " + objectFile.getName());
 
-                try {
-                    FileReader fileReader = new FileReader(objectFile);
-                    BufferedReader bufferedReader = new BufferedReader(fileReader);
-        
-                    String lines = bufferedReader.readLine();
-                    while (lines != null){
-                        System.out.println(lines);
-                        lines = bufferedReader.readLine();
-                    }
-                    fileReader.close();
-        
-                }catch (IOException e){
-                    System.out.println("Erro ao ler o arquivo." + e.getMessage());
-                }
-    }
+    public static void fileReader(File objectFile){
+                        
+        //Reader File
+        System.out.println("Conteudo do Aqruivo: " + objectFile.getName());
+
+        try {
+            FileReader fileReader = new FileReader(objectFile);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+                    
+            String lines = bufferedReader.readLine();
+            while (lines != null){
+                System.out.println(lines);
+                lines = bufferedReader.readLine();
+        }
+            fileReader.close();
+                
+        }catch (IOException e){
+            System.out.println("Erro ao ler o arquivo." + e.getMessage());
+        }
+        }
     
 
 }
