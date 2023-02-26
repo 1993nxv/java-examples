@@ -5,7 +5,6 @@ public class ExampleGeneerics {
     
     public static void main(String[] args){
 
-
         PrintService<Integer> valores = new PrintService<>();
         //PrintService<String> valores = new PrintService<>();
     
